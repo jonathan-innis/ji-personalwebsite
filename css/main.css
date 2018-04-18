@@ -5,7 +5,10 @@ html, body{
 
 .header{
     margin: 0;
-    font-size: 9rem;
+    font-size: 7rem;
+}
+@media (min-width: 550px){
+    .header{ font-size: 9rem; }
 }
 
 .title{
