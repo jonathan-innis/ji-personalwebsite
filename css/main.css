@@ -1,3 +1,21 @@
-html{
+html, body{
     overflow-x: hidden;
+    font-family: 'Comfortaa', serif;
+}
+
+.header{
+    margin: 0;
+    font-size: 9rem;
+}
+
+.title{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.headerDiv{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

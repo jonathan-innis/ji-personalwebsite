@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+	<meta charset="utf-8">
+	<title>scrollSnap Demo</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+	<style>
+
+		html {
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			min-height: 100%;
+			font-size: 14px;
+		}
+
+		section {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			min-height: 400px;
+		}
+
+		section.small {
+			height: auto;
+		}
+
+		section:nth-child(1) { background: rgb(200, 200, 200); }
+		section:nth-child(2) { background: rgb(150, 150, 150); }
+		section:nth-child(3) { background: rgb(100, 100, 100); }
+		section:nth-child(4) { background: rgb(50, 50, 50); }
+		section:nth-child(5) { background: rgb(0, 0, 0); }
+
+	</style>
+
+	<script src="../dist/scrollSnap.min.js"></script>
+
+	<section></section>
+	<section></section>
+	<section></section>
+	<section class="small"></section>
+	<section class="small"></section>
+
+	<script>
+
+		document.addEventListener('DOMContentLoaded', function() {
+
+			scrollSnap.init({
+				elements: document.querySelectorAll('section'),
+				minWidth: 600,
+				minHeight: 400
+			})
+
+		})
+
+	</script>
+
+</html>

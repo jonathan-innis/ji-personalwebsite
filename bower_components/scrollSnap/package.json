@@ -1,0 +1,31 @@
+{
+  "name": "scrollsnap",
+  "moduleName": "scrollSnap",
+  "version": "1.3.3",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Section-based scrolling for your site",
+  "main": "dist/scrollSnap.min.js",
+  "keywords": [
+    "parallax",
+    "scroll",
+    "scrolling",
+    "section",
+    "snap"
+  ],
+  "scripts": {
+    "start": "gulp watch",
+    "compile": "gulp"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/scrollSnap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/scrollSnap.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "@electerious/basictasks": "^1.1.4"
+  }
+}

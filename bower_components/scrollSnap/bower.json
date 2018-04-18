@@ -1,0 +1,21 @@
+{
+  "name": "scrollSnap",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Section-based scrolling for your site",
+  "main": "dist/scrollSnap.min.js",
+  "keywords": [
+    "parallax",
+    "scroll",
+    "scrolling",
+    "section",
+    "snap"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/scrollSnap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/scrollSnap.git"
+  }
+}

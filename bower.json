@@ -1,0 +1,17 @@
+{
+  "name": "ji-personalwebsite",
+  "homepage": "https://github.com/jonathan-innis/ji-personalwebsite",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "progressbar.js": "^1.0.1"
+  }
+}
