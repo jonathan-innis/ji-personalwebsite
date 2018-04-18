@@ -15,25 +15,28 @@ define(function (require) {
         timing: scrollSnap._timing
     });
 
+    window.sr = ScrollReveal();
 
-    var progressBar = new ProgressBar.Line('#progress1', {
+    sr.reveal('#progressBars', {
+        afterReveal: function() {
+            progressBar1.animate(0.3, {
+                duration: 800,
+                easing: 'easeInOut'
+            });
+            progressBar2.animate(0.3, {
+                duration: 800,
+                easing: 'easeInOut'
+            });
+        }
+    });
+
+
+    var progressBar1 = new ProgressBar.Line('#progress1', {
         strokeWidth: 2,
         color: "#000"
     });
-    progressBar.animate(0.3, {
-        duration: 800,
-        easing: 'easeInOut'
-    }, function() {
-        console.log('Animation has finished');
-    });
-    var progressBar = new ProgressBar.Line('#progress2', {
+    var progressBar2 = new ProgressBar.Line('#progress2', {
         strokeWidth: 2,
         color: "#000"
-    });
-    progressBar.animate(0.3, {
-        duration: 800,
-        easing: 'easeInOut'
-    }, function() {
-        console.log('Animation has finished');
     });
 });
