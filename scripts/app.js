@@ -6,7 +6,9 @@
 requirejs.config({
     paths: {
         'progressbar': '../bower_components/progressbar.js/dist/progressbar',
-        'scrollSnap': '../bower_components/scrollSnap/dist/scrollSnap.min'
+        'scrollSnap': '../bower_components/scrollSnap/dist/scrollSnap.min',
+        'velocity': '../bower_components/velocity/velocity.min',
+        'in-view': '../bower_components/in-view/dist/in-view.min'
     }
 });
 

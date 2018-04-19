@@ -3,14 +3,34 @@ define(function (require) {
     // with a relative require call,
     // like:
     var ProgressBar = require('progressbar');
-    var scrollSnap = require('scrollSnap');
+    var inView = require('in-view');
 
-    window.sr = ScrollReveal();
+    var elements = document.querySelectorAll('.header');
+    elements.forEach(element => {
+        element.classList.add('fadeInUp');
+        element.classList.add('animated');
+    });
 
-    sr.reveal(".header");
+    var sympliact = document.querySelector('#sympliact-container')
 
-    sr.reveal('#progressBars', {
-        afterReveal: function() {
+    inView('#experience-title').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+            el.classList.add('animated');
+        }
+    )
+
+    inView('#sympliact-container').on(
+        'enter', el => {
+            sympliact.classList.add('fadeInRight');
+            sympliact.classList.add('animated');
+            
+        }
+    )
+
+
+    inView('#progressBars').on(
+        'enter', el => {
             progressBar1.animate(0.3, {
                 duration: 800,
                 easing: 'easeInOut'
@@ -23,9 +43,33 @@ define(function (require) {
                 duration: 800,
                 easing: 'easeInOut'
             });
-        }
+        });
+    
+    inView('#experienceBar').on(
+        'enter', el => {
+            experienceBar.animate(1, {
+                duration: 800,
+                easing: 'easeInOut'
+            });
+        });
+
+    var titleBar = new ProgressBar.Line('#titleBar', {
+        strokeWidth: 1,
+        color: "#F44336",
     });
 
+    var experienceBar = new ProgressBar.Line('#experienceBar', {
+        strokeWidth: 1,
+        color: "#F44336",
+    });
+
+    setTimeout(function(){
+        titleBar.animate(1, {
+            duration: 800,
+            easing: 'easeInOut',
+            
+        });
+    }, 600);
 
     var progressBar1 = new ProgressBar.Line('#progress1', {
         strokeWidth: 2,
