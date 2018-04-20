@@ -7,6 +7,13 @@ p{
     font-family: 'Comfortaa';
 }
 
+.square{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .header{
     margin: 0;
     padding: 10px;
@@ -20,21 +27,14 @@ p{
     font-size: 4rem;
     margin: 0px;
     font-family: 'Comfortaa';
-    margin-bottom: 10px;
-    display: inline-block;
+    margin-bottom: 5px;
 }
 .experience-time{
-    font-size: 3rem;
-    display: inline-block;
-    margin-left: 50px;
+    font-size: 2.5rem;
     font-family: 'Comfortaa';
-}
-
-.titleIcon{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    color: #00BFA5;
+    margin-bottom: 5px;;
+    opacity: 0.9;
 }
 
 @media (min-width: 550px){
@@ -66,8 +66,8 @@ p{
 
 .headerDiv{
     position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
+    top: 40%;
+    transform: translateY(-40%);
 }
 
 .bar{
@@ -80,14 +80,37 @@ p{
 }
 
 .card{
-    width: 700px;
+    flex-grow: 1;
+    background-color: black;
+    display: inline-block;
     height: 400px;
-    background-color: white;
-    margin: 20px;
+    box-sizing: border-box;
+    background: url(../images/stock.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .cardContainer{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+}
+
+.rectangle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95vw;
+    height: 90vh;
+    border: 12px solid #00BFA5;
+}
+
+#cisco-container{
+    text-align: right;
+    justify-content: right;
+    float: right;
 }

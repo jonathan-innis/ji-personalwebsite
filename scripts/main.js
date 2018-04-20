@@ -11,8 +11,6 @@ define(function (require) {
         element.classList.add('animated');
     });
 
-    var sympliact = document.querySelector('#sympliact-container')
-
     inView('#experience-title').on(
         'enter', el => {
             el.classList.add('fadeInUp');
@@ -22,9 +20,15 @@ define(function (require) {
 
     inView('#sympliact-container').on(
         'enter', el => {
-            sympliact.classList.add('fadeInRight');
-            sympliact.classList.add('animated');
-            
+            el.classList.add('fadeInRight');
+            el.classList.add('animated');
+        }
+    )
+
+    inView('#cisco-container').on(
+        'enter', el => {
+            el.classList.add('fadeInLeft');
+            el.classList.add('animated'); 
         }
     )
 
@@ -70,17 +74,4 @@ define(function (require) {
             
         });
     }, 600);
-
-    var progressBar1 = new ProgressBar.Line('#progress1', {
-        strokeWidth: 2,
-        color: "#F44336"
-    });
-    var progressBar2 = new ProgressBar.Line('#progress2', {
-        strokeWidth: 2,
-        color: "#F44336"
-    });
-    var progressBar3 = new ProgressBar.Line('#progress3', {
-        strokeWidth: 2,
-        color: "#F44336"
-    });
 });
