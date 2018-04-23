@@ -4,7 +4,7 @@ html, body{
 }
 
 p{
-    font-family: 'Comfortaa';
+    font-family: 'Hind';
 }
 
 .header{
@@ -19,20 +19,20 @@ p{
 .small-title{
     font-size: 4rem;
     margin: 0px;
-    font-family: 'Comfortaa';
+    font-family: 'Hind';
     margin-bottom: 5px;
     font-weight: bolder;
 }
 .experience-time{
     font-size: 2.5rem;
-    font-family: 'Comfortaa';
+    font-family: 'Hind';
     color: #00BFA5;
     margin-bottom: 5px;;
     opacity: 0.9;
 }
 
 @media (min-width: 550px){
-    .header{ font-size: 12rem; }
+    .header{ font-size: 10rem; }
     .subheader{ font-size: 15rem; }
     .small-title{ font-size: 5rem; }
 }
@@ -77,11 +77,12 @@ p{
     background-color: black;
     display: inline-block;
     width: 50%;
-    height: 500px;
+    height: 35vw;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     display: block;
+    line-height: 35vw;
 }
 
 #left-card{
@@ -93,7 +94,7 @@ p{
 }
 
 @media (max-width: 700px){
-    .card{ width: 100%; }
+    .card{ width: 100%; height: 400px; line-height: 400px; }
     #left-card{ border: none; border-bottom: 2px solid white; }
     #right-card { border: none; border-top: 2px solid white; }
 }
@@ -119,34 +120,35 @@ p{
 }
 
 .card-image{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .card:hover .card-image{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .card span {
     color: white; /* Good thing we set a fallback color! */
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: bolder;
-    font-size: 7rem;
+    font-family: 'Hind', sans-serif;
+    font-size: 9rem;
     padding: 30px;
     width: calc(100% - 60px);
     text-align: center;
-    position: absolute;
-    display: block;
-    z-index: 2;
-    transition: all 0.3s ease-in;
-    margin-top: 150px;
-    line-height: 1.25;
+    display: inline-block;
+    z-index: 10;
+    transition: all 0.4s ease-in;
+    line-height: 1;
+    vertical-align: middle;
 }
 
 .card:hover span{
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .card-image::before {
@@ -159,11 +161,11 @@ p{
     left: 0;
     background-color: black;
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition:  opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition:  opacity 0.4s ease-out;
     display: block;
   }
   
