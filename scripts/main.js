@@ -57,6 +57,14 @@ define(function (require) {
             });
         });
 
+    inView('#skillsBar').on(
+        'enter', el => {
+            skillsBar.animate(1, {
+                duration: 800,
+                easing: 'easeInOut'
+            });
+        });
+
     var titleBar = new ProgressBar.Line('#titleBar', {
         strokeWidth: 1,
         color: "#F44336",
@@ -64,7 +72,12 @@ define(function (require) {
 
     var experienceBar = new ProgressBar.Line('#experienceBar', {
         strokeWidth: 1,
-        color: "#F44336",
+        color: "#00BFA5",
+    });
+
+    var skillsBar = new ProgressBar.Line('#skillsBar', {
+        strokeWidth: 1,
+        color: "#00BFA5",
     });
 
     setTimeout(function(){
