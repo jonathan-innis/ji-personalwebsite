@@ -13,7 +13,7 @@ p{
     font-size: 6rem;
 }
 .subheader{
-    font-size: 6rem;
+    font-size: 8rem;
     margin: 0px;
 }
 .small-title{
@@ -101,6 +101,7 @@ p{
     position: relative;
     display: block;
     line-height: 30vw;
+    border-top: 4px solid white;
 }
 
 #left-card{
@@ -111,10 +112,10 @@ p{
     border-left: 2px solid white;
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .card{ width: 100%; height: 400px; line-height: 400px; }
-    #left-card{ border: none; border-bottom: 2px solid white; }
-    #right-card { border: none; border-top: 2px solid white; }
+    #left-card{ border: none; border-top: 4px solid white;}
+    #right-card { border: none; border-top: 4px solid white;s}
 }
 
 #left-card-image{
@@ -212,4 +213,10 @@ p{
     text-align: right;
     justify-content: right;
     float: right;
+}
+
+.skills-column-text{
+    font-family: "Hind", sans-serif;
+    font-size: 3rem;
+    text-align: center;
 }
