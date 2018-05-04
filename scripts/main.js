@@ -1,4 +1,4 @@
-define(function (require) {
+define(require => {
     // Load any app-specific modules
     // with a relative require call,
     // like:
@@ -67,23 +67,6 @@ define(function (require) {
             });
         }
     );
-    
-    inView('#reactCircle').on(
-        'enter', el => {
-            reactCircle.animate(1, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-            jsCircle.animate(0.7, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-            pythonCircle.animate(0.5, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-        }
-    );
 
     var titleBar = new ProgressBar.Line('#titleBar', {
         strokeWidth: 1,
@@ -99,93 +82,6 @@ define(function (require) {
         strokeWidth: 1,
         color: "#00BFA5",
     });
-
-    var reactCircle = new ProgressBar.SemiCircle('#reactCircle', {
-        strokeWidth: 6,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        easing: 'easeInOut',
-        duration: 1400,
-        svgStyle: null,
-        text: {
-            value: '',
-            alignToBottom: false
-        },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
-        step: (state, bar) => {
-            bar.path.setAttribute('stroke', state.color);
-            var value = Math.round(bar.value() * 100);
-            if (value === 0) {
-            bar.setText('');
-            } else {
-            bar.setText(value);
-            }
-
-            bar.text.style.color = state.color;
-        }
-    });
-    reactCircle.text.style.fontFamily = '"Hind", sans-serif';
-    reactCircle.text.style.fontSize = '4rem';
-
-    var jsCircle = new ProgressBar.SemiCircle('#jsCircle', {
-        strokeWidth: 6,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        easing: 'easeInOut',
-        duration: 1400,
-        svgStyle: null,
-        text: {
-            value: '',
-            alignToBottom: false
-        },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
-        step: (state, bar) => {
-            bar.path.setAttribute('stroke', state.color);
-            var value = Math.round(bar.value() * 100);
-            if (value === 0) {
-            bar.setText('');
-            } else {
-            bar.setText(value);
-            }
-
-            bar.text.style.color = state.color;
-        }
-    });
-    jsCircle.text.style.fontFamily = '"Hind", sans-serif';
-    jsCircle.text.style.fontSize = '4rem';
-
-    var pythonCircle = new ProgressBar.SemiCircle('#pythonCircle', {
-        strokeWidth: 6,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        easing: 'easeInOut',
-        duration: 1400,
-        svgStyle: null,
-        text: {
-            value: '',
-            alignToBottom: false
-        },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
-        step: (state, bar) => {
-            bar.path.setAttribute('stroke', state.color);
-            var value = Math.round(bar.value() * 100);
-            if (value === 0) {
-            bar.setText('');
-            } else {
-            bar.setText(value);
-            }
-
-            bar.text.style.color = state.color;
-        }
-    });
-    pythonCircle.text.style.fontFamily = '"Hind", sans-serif';
-    pythonCircle.text.style.fontSize = '4rem';
 
     setTimeout(function(){
         titleBar.animate(1, {

@@ -4,7 +4,7 @@ html, body{
 }
 
 p{
-    font-family: 'Hind';
+    font-family: 'Raleway';
 }
 
 .header{
@@ -19,13 +19,13 @@ p{
 .small-title{
     font-size: 4rem;
     margin: 0px;
-    font-family: 'Hind';
+    font-family: 'Raleway';
     margin-bottom: 5px;
     font-weight: bolder;
 }
 .experience-time{
     font-size: 2.5rem;
-    font-family: 'Hind';
+    font-family: 'Raleway';
     color: #00BFA5;
     margin-bottom: 5px;;
     opacity: 0.9;
@@ -115,7 +115,7 @@ p{
 @media (max-width: 800px){
     .card{ width: 100%; height: 400px; line-height: 400px; }
     #left-card{ border: none; border-top: 4px solid white;}
-    #right-card { border: none; border-top: 4px solid white;s}
+    #right-card { border: none; border-top: 4px solid white;}
 }
 
 #left-card-image{
@@ -154,7 +154,7 @@ p{
 
 .card span {
     color: white; /* Good thing we set a fallback color! */
-    font-family: 'Hind', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 8rem;
     padding: 100px;
     width: calc(100% - 200px);
@@ -164,6 +164,10 @@ p{
     transition: all 0.4s ease-in;
     line-height: 1;
     vertical-align: middle;
+}
+
+@media (max-width: 700px){
+    .card span{ font-size: 4rem; }
 }
 
 .card:hover span{
@@ -216,7 +220,19 @@ p{
 }
 
 .skills-column-text{
-    font-family: "Hind", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 3rem;
     text-align: center;
+    font-weight: lighter;
+}
+
+.skills-section{
+    margin-bottom: 100px;
+}
+
+.skills-mini-title{
+    font-family: "Raleway", sans-serif;
+    font-size: 6rem;
+    font-weight: bolder;
+    margin: 0px;
 }
