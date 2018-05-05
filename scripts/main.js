@@ -5,12 +5,6 @@ define(require => {
     var ProgressBar = require('progressbar');
     var inView = require('in-view');
 
-    var elements = document.querySelectorAll('.header');
-    elements.forEach(element => {
-        element.classList.add('fadeInUp');
-        element.classList.add('animated');
-    });
-
     inView('#experience-title').on(
         'enter', el => {
             el.classList.add('fadeInUp');
@@ -89,5 +83,5 @@ define(require => {
             easing: 'easeInOut',
             
         });
-    }, 600);
+    }, 1000);
 });

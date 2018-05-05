@@ -21,8 +21,10 @@
   <!-- ICONS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script data-main="scripts/app" src="scripts/require.js"></script>
-  
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -38,8 +40,13 @@
   <div class="rectangle"></div>
   <section class="full-width container">
       <div class="headerDiv nine columns">
-        <h1 class="header">inspired by design.</h1>
-        <h1 class="header">driven by passion.</h1>
+        <h1 class="header ml13">inspired</h1>
+        <h1 class="header ml13">by</h1>
+        <h1 class="header ml13">design.</h1>
+        <br/>
+        <h1 class="header ml13">driven</h1>
+        <h1 class="header ml13">by</h1>
+        <h1 class="header ml13">passion.</h1>
         <div id="titleBar"></div>
       </div>
   </section>
@@ -89,40 +96,57 @@
         </div> 
     </div>
   </section>
+  <section id="information">
+    <p>This is some information about myself that I would like to put in this little box here. I am just going to keep writing and writing until I finish writing and I don't want to do it anymore</p>
+  </section>
   <section id="skills">
       <div class="skills-section" style="width:50%;">
         <h1 id="experience-title" class="subheader" style="margin-top: 100px">skills</h1>
         <div id="skillsBar" style="margin-top: 10px"></div>
       </div>
+      </div>
       <div class="container skills-section">
         <h1 class="skills-mini-title">Languages</h1>
         <p>This is a little bit of text that I can add in here.</p>
         <div class="four columns" style="margin-left: 0px;">
-          <h1 class="skills-column-text">C++</h1>
-          <div id="cppCircle" style="margin: 30px;"></div>
+          <div id="cppCircle" class="semicircle"></div>
+          <p class="skills-description">very experienced</p>
         </div>
         <div class="four columns">
-          <h1 class="skills-column-text">Javascript</h1>
-          <div id="jsCircle" style="margin: 30px;"></div>
+          <div id="jsCircle" class="semicircle"></div>
+          <p class="skills-description">very experienced</p>
         </div>
         <div class="four columns">
-          <h1 class="skills-column-text">Python</h1>
-          <div id="pythonCircle" style="margin: 30px;"></div>
+          <div id="pythonCircle" class="semicircle"></div>
+          <p class="skills-description">very expereinced</p>
         </div> 
+        <div class="four columns" style="margin-left: 0px;">
+          <div id="javaCircle" class="semicircle"></div>
+          <p class="skills-description">experienced</p>
+        </div>
+        <div class="four columns">
+          <div id="cCircle" class="semicircle"></div>
+          <p class="skills-description">expereinced</p>
+        </div>
+        <div class="four columns">
+          <div id="phpCircle" class="semicircle"></div>
+          <p class="skills-description">learning</p>
+        </div>
       </div>  
       <div class="container">
           <h1 class="skills-mini-title">Frameworks</h1>
+          <p>This is a little bit of text that I can add in here.</p>
           <div class="four columns" style="margin-left: 0px;">
-            <h1 class="skills-column-text">React.js</h1>
-            <div id="reactCircle" style="margin: 30px;"></div>
+            <div id="reactCircle" class="semicircle"></div>
+            <p class="skills-description">very expereinced</p>
           </div>
           <div class="four columns">
-            <h1 class="skills-column-text">Node.js</h1>
-            <div id="nodejsCircle" style="margin: 30px;"></div>
+            <div id="nodejsCircle" class="semicircle"></div>
+            <p class="skills-description">experienced</p>
           </div>
           <div class="four columns">
-            <h1 class="skills-column-text">Django</h1>
-            <div id="djangoCircle" style="margin: 30px;"></div>
+            <div id="djangoCircle" class="semicircle"></div>
+            <p class="skills-description">learning</p>
           </div> 
         </div>  
     </section>

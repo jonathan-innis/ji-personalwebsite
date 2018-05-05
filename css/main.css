@@ -11,6 +11,7 @@ p{
     margin: 0;
     padding: 10px;
     font-size: 6rem;
+    display: inline-block;
 }
 .subheader{
     font-size: 8rem;
@@ -235,4 +236,22 @@ p{
     font-size: 6rem;
     font-weight: bolder;
     margin: 0px;
+}
+
+.semicircle{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+}
+
+.skills-description{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+  /*text animations*/
+.ml13 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
