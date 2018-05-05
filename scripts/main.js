@@ -4,11 +4,11 @@ define(require => {
     // like:
     var ProgressBar = require('progressbar');
     var inView = require('in-view');
+    inView.offset(-50);
 
     inView('#experience-title').on(
         'enter', el => {
-            el.classList.add('fadeInUp');
-            el.classList.add('animated');
+            $('#experience-title').classList.add('ml14');
         }
     )
 

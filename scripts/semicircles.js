@@ -12,6 +12,7 @@ const step = function(state, bar){
 define(require =>{ 
     var ProgressBar = require('progressbar');
     var inView = require('in-view');
+    inView.offset(-50);
 
     inView('#cppCircle').on(
         'enter', el => {
