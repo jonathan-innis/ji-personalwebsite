@@ -119,8 +119,8 @@ p{
     #right-card { border: none; border-top: 4px solid white;}
 }
 
-#left-card-image{
-    background: url(../images/stars.jpg) no-repeat center center fixed; 
+#good-bull{
+    background: url(../images/scheduling.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -128,9 +128,26 @@ p{
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
-
-#right-card-image{
-    background: url(../images/stars.jpg) no-repeat center center fixed;
+#aggie-coding{
+    background: url(../images/acc.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#hacc-landing{
+    background: url(../images/hacc.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#personal-website{
+    background: url(../images/design.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -148,11 +165,6 @@ p{
     transition: all 0.4s ease-in;
 }
 
-.card:hover .card-image{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 .card span {
     color: white; /* Good thing we set a fallback color! */
     font-family: 'Raleway', sans-serif;
@@ -160,6 +172,7 @@ p{
     padding: 100px;
     width: calc(100% - 200px);
     text-align: center;
+    font-weight: bolder;
     display: inline-block;
     z-index: 10;
     transition: all 0.4s ease-in;
@@ -171,36 +184,10 @@ p{
     .card span{ font-size: 4rem; }
 }
 
-.card:hover span{
-    transform: scale(1);
-}
-
-.card-image::before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    opacity: 0;
-    -webkit-transition: opacity 0.4s ease;
-    -moz-transition: opacity 0.4s ease;
-    -ms-transition: opacity 0.4s ease;
-    -o-transition: opacity 0.4s ease;
-    transition:  opacity 0.4s ease-out;
-    display: block;
-  }
-  
-  .card:hover .card-image:before,
-  .card:focus .card-image:before {
-    opacity: 0.4;
-  }
-
 .cardContainer{
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .rectangle{

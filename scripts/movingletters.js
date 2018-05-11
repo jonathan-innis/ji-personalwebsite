@@ -1,6 +1,6 @@
 define(require =>{
     var inView = require('in-view');
-    inView.offset(-100);
+    inView.offset(-150);
 
     // Wrap every letter in a span
     $('.ml13').each(function(){

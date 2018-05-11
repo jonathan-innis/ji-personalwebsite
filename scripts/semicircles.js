@@ -97,7 +97,7 @@ define(require =>{
 
     var cppCircle = new ProgressBar.SemiCircle('#cppCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#f34b7d',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -107,16 +107,16 @@ define(require =>{
             value: 'C++',
             alignToBottom: false
         },
-        from: {color: '#F44336'},
-        to: {color: '#F44336'},
+        from: {color: '#f34b7d'},
+        to: {color: '#f34b7d'},
     });
     cppCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    cppCircle.text.style.fontSize = '3rem';
+    cppCircle.text.style.fontSize = '3.5rem';
     cppCircle.text.style.color= 'black';
     
     var jsCircle = new ProgressBar.SemiCircle('#jsCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#f1e05a',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -126,16 +126,16 @@ define(require =>{
             value: "Javascript",
             alignToBottom: false
         },
-        from: {color: '#f7776e'},
-        to: {color: '#f7776e'},
+        from: {color: '#f1e05ae'},
+        to: {color: '#f1e05a'},
     });
     jsCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    jsCircle.text.style.fontSize = '3rem';
+    jsCircle.text.style.fontSize = '3.5rem';
     jsCircle.text.style.color= 'black';
     
     var pythonCircle = new ProgressBar.SemiCircle('#pythonCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#3572A5',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -145,16 +145,16 @@ define(require =>{
             value: 'Python',
             alignToBottom: false
         },
-        from: {color: '#faa49e'},
-        to: {color: '#faa49e'},
+        from: {color: '#3572A5'},
+        to: {color: '#3572A5'},
     });
     pythonCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    pythonCircle.text.style.fontSize = '3rem';
+    pythonCircle.text.style.fontSize = '3.5rem';
     pythonCircle.text.style.color= 'black';
 
     var javaCircle = new ProgressBar.SemiCircle('#javaCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#b07219',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -164,16 +164,16 @@ define(require =>{
             value: 'Java',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#b07219'},
+        to: {color: '#b07219'},
     });
     javaCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    javaCircle.text.style.fontSize = '3rem';
+    javaCircle.text.style.fontSize = '3.5rem';
     javaCircle.text.style.color= 'black';
 
     var cCircle = new ProgressBar.SemiCircle('#cCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#555555',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -183,16 +183,16 @@ define(require =>{
             value: 'C',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#555555'},
+        to: {color: '#555555'},
     });
     cCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    cCircle.text.style.fontSize = '3rem';
+    cCircle.text.style.fontSize = '3.5rem';
     cCircle.text.style.color= 'black';
 
     var phpCircle = new ProgressBar.SemiCircle('#phpCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#4F5D95',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -202,16 +202,16 @@ define(require =>{
             value: 'PHP',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#4F5D95'},
+        to: {color: '#4F5D95'},
     });
     phpCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    phpCircle.text.style.fontSize = '3rem';
+    phpCircle.text.style.fontSize = '3.5rem';
     phpCircle.text.style.color= 'black';
 
     var reactCircle = new ProgressBar.SemiCircle('#reactCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#00d8ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -221,16 +221,16 @@ define(require =>{
             value: 'React.js',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#00d8ff'},
+        to: {color: '#00d8ff'},
     });
     reactCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    reactCircle.text.style.fontSize = '3rem';
+    reactCircle.text.style.fontSize = '3.5rem';
     reactCircle.text.style.color= 'black';
 
     var nodejsCircle = new ProgressBar.SemiCircle('#nodejsCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6cc24a',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -240,16 +240,16 @@ define(require =>{
             value: 'Node.js',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#6cc24a'},
+        to: {color: '#6cc24a'},
     });
     nodejsCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    nodejsCircle.text.style.fontSize = '3rem';
+    nodejsCircle.text.style.fontSize = '3.5rem';
     nodejsCircle.text.style.color= 'black';
 
     var djangoCircle = new ProgressBar.SemiCircle('#djangoCircle', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#092e20',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -259,10 +259,10 @@ define(require =>{
             value: 'Django',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#FFEA82'},
+        from: {color: '#092e20'},
+        to: {color: '#092e20'},
     });
     djangoCircle.text.style.fontFamily = '"Raleway", sans-serif';
-    djangoCircle.text.style.fontSize = '3rem';
+    djangoCircle.text.style.fontSize = '3.5rem';
     djangoCircle.text.style.color= 'black';
 });

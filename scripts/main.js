@@ -14,15 +14,13 @@ define(require => {
 
     inView('#sympliact-container').on(
         'enter', el => {
-            el.classList.add('fadeInRight');
-            el.classList.add('animated');
+            el.classList.add('fadeInUp');
         }
     )
 
     inView('#cisco-container').on(
         'enter', el => {
-            el.classList.add('fadeInLeft');
-            el.classList.add('animated'); 
+            el.classList.add('fadeInUp');
         }
     )
 
