@@ -259,6 +259,10 @@ p{
     margin-top: 70px;
 }
 
+.skills-overview{
+    font-size: 2rem;
+}
+
 .skills-description{
     text-align: center;
     margin-top: 15px;
