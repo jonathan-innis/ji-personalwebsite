@@ -69,5 +69,30 @@ define(require =>{
             }
         }
     )
+
+    let projectsLoaded = false;
+    inView('#projects-title').on(
+        'enter', el => {
+            if (!projectsLoaded){
+                $('.ml16').each(function(){
+                    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+                });
+                
+                anime.timeline()
+                    .add({
+                    targets: '.ml16 .letter',
+                    translateY: [100,0],
+                    translateZ: 0,
+                    opacity: [0,1],
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: function(el, i) {
+                        return 300 + 30 * i;
+                    }
+                });
+                projectsLoaded = true;
+            }
+        }
+    )
     
 });

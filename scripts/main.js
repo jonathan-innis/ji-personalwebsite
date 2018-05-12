@@ -60,6 +60,12 @@ define(require => {
         }
     );
 
+    inView('#skillsBar').on(
+        'enter', el => {
+            
+        }
+    );
+
     var titleBar = new ProgressBar.Line('#titleBar', {
         strokeWidth: 1,
         color: "#F44336",
