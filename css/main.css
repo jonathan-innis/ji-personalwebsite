@@ -303,6 +303,7 @@ p{
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
+    color: white;
 }
 
 .icon-text{
