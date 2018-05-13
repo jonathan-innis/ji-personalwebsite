@@ -38,12 +38,12 @@ p{
     .small-title{ font-size: 5rem; }
 }
 
-#information{
+.information{
     background-color: #f5f5f3;
     padding: 50px;
 }
 
-#information p{
+.information p{
     margin: 0px;
     text-align: center;
     font-size: 3rem;
@@ -200,17 +200,40 @@ p{
     position: relative;
     left: 50%;  
     top: 50%; 
-    transition: width 0.5s, height 0.5s;
-    opacity: 0.8;
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    opacity: 0;
 }
 
-.black{
+.hovered-text{
+    color: white;
+    position: absolute;
+    bottom: calc(-50% + 40px);
+    right: 35px;
+    vertical-align: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 0s;
+    font-family: 'Raleway';
+    font-size: 2rem;
+}
+
+.card:hover .hovered-text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.black-text{
+    color: black;
+}
+
+.black-border{
     border-color: black;
 }
 
 .card:hover .expanding-rectangle{
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    opacity: 1;
 }
 
 .card span:hover .expanding-rectangle{
@@ -269,6 +292,25 @@ p{
     margin-bottom: 70px;
 }
 
+#contact{
+    background-color: black;
+    color: white;
+}
+
+.icon{
+    font-size: 6rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+.icon-text{
+    font-size: 2rem;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
   /*text animations*/
 .ml13 .letter {
     display: inline-block;
@@ -286,6 +328,11 @@ p{
 }
 
 .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.ml17 .letter {
     display: inline-block;
     line-height: 1em;
 }
