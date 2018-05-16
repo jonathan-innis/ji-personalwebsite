@@ -17,6 +17,42 @@ define(require => {
         }
     )
 
+    inView('#infoheader1').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
+    inView('#infoheader2').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
+    inView('#frameworks-title').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
+    inView('#frameworks-overview').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
+    inView('#languages-title').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
+    inView('#languages-overview').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
+
     inView('#sympliact-container').on(
         'enter', el => {
             el.classList.add('fadeInUp');
@@ -65,9 +101,12 @@ define(require => {
         }
     );
 
-    inView('#skillsBar').on(
+    inView('#contactBar').on(
         'enter', el => {
-            
+            contactBar.animate(1, {
+                duration: 800,
+                easing: 'easeInOut'
+            });
         }
     );
 
@@ -82,6 +121,11 @@ define(require => {
     });
 
     var skillsBar = new ProgressBar.Line('#skillsBar', {
+        strokeWidth: 1,
+        color: "#00BFA5",
+    });
+
+    var contactBar = new ProgressBar.Line('#contactBar', {
         strokeWidth: 1,
         color: "#00BFA5",
     });
