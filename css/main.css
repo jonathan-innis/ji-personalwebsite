@@ -58,7 +58,7 @@ p{
 }
 
 #experience{
-    background-color: black;
+    background-color: #161616;
     color: white;
     overflow: hidden;
 }
@@ -100,7 +100,7 @@ p{
 }
 
 .card{
-    background-color: black;
+    background-color: #161616;
     display: inline-block;
     width: 50%;
     height: 30vw;
@@ -301,8 +301,12 @@ p{
 }
 
 #contact{
-    background-color: black;
+    background-color: #161616;
     color: white;
+}
+
+.contact-column{
+    margin-left: 0px;
 }
 
 .icon{
