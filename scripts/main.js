@@ -1,7 +1,4 @@
 define(require => {
-    // Load any app-specific modules
-    // with a relative require call,
-    // like:
     var ProgressBar = require('progressbar');
     var inView = require('in-view');
 
