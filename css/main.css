@@ -43,7 +43,7 @@ p{
     padding: 150px;
 }
 
-.information p{
+.information-paragraph{
     margin: 0px;
     text-align: center;
     font-size: 3rem;
@@ -58,11 +58,13 @@ p{
 }
 
 #infoheader2{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
-.small-icon{
-    font-size: 6rem;
+.small-icon-info{
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 1;
 }
 
 #experience{
@@ -237,14 +239,6 @@ p{
     transition-delay: 0.4s;
 }
 
-.black-text{
-    color: black;
-}
-
-.black-border{
-    border-color: black;
-}
-
 .card:hover .expanding-rectangle{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
@@ -317,19 +311,15 @@ p{
     margin-left: 0px;
     flex-grow: 1;
     text-align: center;
+    margin: 20px;
 }
 
 .flex-container{
     display: flex;
-    padding-bottom: 100px;
 }
 
 .icon{
     font-size: 6rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
     color: white;
 }
 
@@ -368,4 +358,16 @@ p{
 .ml17 .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+.black-text{
+    color: black;
+}
+
+.gray-text{
+    color: #161616;
+}
+
+.black-border{
+    border-color: black;
 }
