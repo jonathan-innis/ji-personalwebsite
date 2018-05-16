@@ -71,11 +71,26 @@ p{
     margin: 0px;
 }
 
+#infoheader1{
+    margin-bottom: 40px;
+}
+
 #infoheader2{
     margin-bottom: 100px;
 }
 
+.info-column{
+    padding: 20px;
+}
+
+.small-icon-info{
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 5px;
+}
+
 .large-icon-info{
+    margin: 0px;
     margin-top: 20px;
     font-size: 2.5rem;
     font-weight: bolder;

@@ -8,7 +8,7 @@ define(require => {
         }
     )
 
-    inView('#information2 p').on(
+    inView('#information2-container').on(
         'enter', el => {
             el.classList.add('fadeInUp');
         }
