@@ -31,7 +31,6 @@ p{
     font-size: 4rem;
     margin: 0px;
     font-family: 'Raleway';
-    margin-bottom: 5px;
     font-weight: bolder;
 }
 
@@ -103,12 +102,19 @@ p{
     overflow: hidden;
 }
 
-.experience-time{
+.experience-role{
     font-size: 2.5rem;
     font-family: 'Raleway';
     color: #00BFA5;
+    margin: 0px;
+}
+
+.experience-time{
+    font-size: 2.5rem;
+    font-family: 'Raleway';
     margin-bottom: 5px;;
     opacity: 0.9;
+    font-style: italic;
 }
 
 .experience-container{
@@ -117,6 +123,17 @@ p{
 }
 @media (min-width: 550px){
     .experience-container{ margin: 100px; border: none; }
+}
+
+.chip{
+    text-align: center;
+    background-color: #F44336;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    margin: 0px 5px;
 }
 
 .bar{
@@ -139,7 +156,7 @@ p{
     border: 12px solid #00BFA5;
 }
 
-#cisco-container{
+#sympliact-container{
     text-align: right;
     justify-content: right;
     float: right;

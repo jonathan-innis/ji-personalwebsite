@@ -24,7 +24,9 @@
 }
 
 .skills-overview{
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    margin: 150px;
 }
 
 .skills-description{
