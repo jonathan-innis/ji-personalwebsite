@@ -156,7 +156,7 @@ p{
     border: 12px solid #00BFA5;
 }
 
-#sympliact-container{
+#cisco-container{
     text-align: right;
     justify-content: right;
     float: right;
@@ -171,8 +171,13 @@ p{
     display: flex;
 }
 
-.icon{
+.big-icon{
     font-size: 6rem;
+    color: white;
+}
+
+.icon{
+    font-size: 4rem;
     color: white;
 }
 
@@ -181,10 +186,22 @@ p{
     border-right: 2px solid white;
 }
 
+.link-container{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vertical-align{
+    position: relative;
+    top: 50%;
+}
+
 .icon-text{
     font-size: 2rem;
     font-family: 'Raleway';
     text-align: center;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .black-text{
@@ -197,4 +214,9 @@ p{
 
 .black-border{
     border-color: black;
+}
+
+.contact-subtitle{
+    font-size: 4rem;
+    margin: 0px;
 }

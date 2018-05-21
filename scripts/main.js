@@ -98,15 +98,6 @@ define(require => {
         }
     );
 
-    inView('#contactBar').on(
-        'enter', el => {
-            contactBar.animate(1, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-        }
-    );
-
     var titleBar = new ProgressBar.Line('#titleBar', {
         strokeWidth: 1,
         color: "#F44336",
@@ -118,11 +109,6 @@ define(require => {
     });
 
     var skillsBar = new ProgressBar.Line('#skillsBar', {
-        strokeWidth: 1,
-        color: "#00BFA5",
-    });
-
-    var contactBar = new ProgressBar.Line('#contactBar', {
         strokeWidth: 1,
         color: "#00BFA5",
     });
