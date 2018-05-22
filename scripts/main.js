@@ -62,6 +62,11 @@ define(require => {
         }
     )
 
+    inView('#skills-header').on(
+        'enter', el => {
+            el.classList.add('fadeInUp');
+        }
+    )
 
     inView('#progressBars').on(
         'enter', el => {
