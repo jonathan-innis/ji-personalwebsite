@@ -26,7 +26,8 @@
 .skills-overview{
     font-size: 3rem;
     text-align: center;
-    margin: 150px;
+    margin-top: 20px;
+    margin-bottom: 150px;
 }
 
 .skills-description{
@@ -39,6 +40,10 @@
     background-color: white;
     color: black;
     overflow: hidden;
+}
+
+#skills-header{
+    margin-bottom: 0px !important;
 }
 
 @media(max-width: 550px){
