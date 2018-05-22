@@ -40,3 +40,10 @@
     color: black;
     overflow: hidden;
 }
+
+@media(max-width: 550px){
+    .skills-overview{
+        margin: 50px;
+        font-size: 3rem;
+    }
+}
