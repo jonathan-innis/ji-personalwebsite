@@ -44,6 +44,9 @@
 @media(max-width: 550px){
     .skills-overview{
         margin: 50px;
+        font-size: 2rem;
+    }
+    .skills-mini-title{
         font-size: 3rem;
     }
 }
