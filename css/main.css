@@ -15,6 +15,11 @@ p{
     text-align: left;
 }
 
+.header-small{
+    font-size: 3rem;
+    margin-left: 5px;
+}
+
 .header-div{
     position: absolute;
     top: 50%;
