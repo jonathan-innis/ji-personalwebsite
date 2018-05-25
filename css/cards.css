@@ -27,7 +27,7 @@
 
 #good-bull{
     background-color: white !important;
-    background: url(../images/goodbull.png) no-repeat center center fixed; 
+    background: url(../compressed/GBS_LOGO2-min.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,7 +36,7 @@
     background-attachment: scroll;
 }
 #aggie-coding{
-    background: url(../images/acc.png) no-repeat center center fixed; 
+    background: url(../compressed/acc-min.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
