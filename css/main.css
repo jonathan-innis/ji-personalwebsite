@@ -280,10 +280,23 @@ p{
 .contact-subtitle{
     font-size: 5rem;
     margin: 0px;
+    padding: 20px;
 }
 
 .contact-description{
     font-size: 2rem;
+    padding: 20px;
+}
+
+.contact-container{
+    border-left: 1px solid white;
+    padding: 20px;
+}
+
+@media(max-width: 550px){
+    .contact-container{
+        border-left: none;
+    }
 }
 
 .copyright{
