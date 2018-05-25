@@ -54,10 +54,33 @@ p{
     overflow-y: hidden;
 }
 
+.rectangle{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    margin: 0px;
+    width: calc(100vw - 120px);
+    height: 780px;
+    border: 12px solid #00BFA5;
+}
+
+@media(max-width: 550px){
+    .full-width{
+        height: 700px;
+    }
+
+    .rectangle{
+        top: 30px;
+        width: calc(100vw - 80px);
+        height: 620px;
+    }
+}
+
 @media (max-width: 550px){
-    .header{ font-size: 6rem; }
-    .subheader{ font-size: 8rem; }
-    .small-title{ font-size: 3rem; }
+    .header{ font-size: 4rem; }
+    .subheader{ font-size: 5rem; }
+    .small-title{ font-size: 2rem; }
 }
 
 @media (min-width: 950px){
@@ -184,17 +207,6 @@ p{
     width: 75%;
 }
 
-.rectangle{
-    position: absolute;
-    left: 50%;
-    top: 60px;
-    transform: translateX(-50%);
-    margin: 0px;
-    width: calc(100vw - 120px);
-    height: 780px;
-    border: 12px solid #00BFA5;
-}
-
 #cisco-container{
     text-align: right;
     justify-content: right;
@@ -218,6 +230,16 @@ p{
 .icon{
     font-size: 4rem;
     color: white;
+}
+
+#projects-title{
+    font-size: 8rem;
+}
+
+@media(max-width: 550px){
+    #projects-title{
+        font-size: 4rem;
+    }
 }
 
 .center-icon-container{
