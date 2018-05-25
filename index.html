@@ -28,6 +28,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script data-main="scripts/app" src="scripts/require.js"></script>
+  <script>
+      $(window).on('load', function() {
+        //$("#cover").hide();
+     });
+  </script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,12 +44,21 @@
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/loading-animation.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+  <div id="cover">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </div>
   <div class="rectangle"></div>
   <section class="full-width">
       <div class="header-div">
