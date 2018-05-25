@@ -9,6 +9,8 @@ html, body{
     z-index: 10;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 p{
@@ -277,25 +279,26 @@ p{
     border-color: black;
 }
 
-.contact-subtitle{
+#contact-subtitle{
     font-size: 5rem;
     margin: 0px;
-    padding: 20px;
 }
 
-.contact-description{
+#contact-description{
     font-size: 2rem;
-    padding: 20px;
 }
 
-.contact-container{
+#contact-container{
     border-left: 1px solid white;
     padding: 20px;
 }
 
 @media(max-width: 550px){
-    .contact-container{
+    #contact-container{
         border-left: none;
+    }
+    #contact-subtitle, #contact-description{
+        padding: 20px;
     }
 }
 

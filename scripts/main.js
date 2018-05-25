@@ -1,92 +1,27 @@
 define(require => {
     var ProgressBar = require('progressbar');
     var inView = require('in-view');
+    window.sr = ScrollReveal({duration: 1000, origin: 'bottom'});
 
-    inView('#information1 p').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#information2-container').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#infoheader1').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#infoheader2').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#frameworks-title').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#frameworks-overview').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#languages-title').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#languages-overview').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#sympliact-container').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#cisco-container').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#skills-header').on(
-        'enter', el => {
-            el.classList.add('fadeInUp');
-        }
-    )
-
-    inView('#progressBars').on(
-        'enter', el => {
-            progressBar1.animate(0.3, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-            progressBar2.animate(0.3, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-            progressBar3.animate(0.3, {
-                duration: 800,
-                easing: 'easeInOut'
-            });
-        }
-    );
+    sr.reveal('#information1 p');
+    sr.reveal('#infoheader1');
+    sr.reveal('#information2-container');
+    sr.reveal('#infoheader2');
+    sr.reveal('#frameworks-title');
+    sr.reveal('#frameworks-overview');
+    sr.reveal('#languages-title');
+    sr.reveal('#languages-overview');
+    sr.reveal('#sympliact-container');
+    sr.reveal('#cisco-container');
+    sr.reveal('#skills-header');
+    sr.reveal('#contact-container');
+    sr.reveal('#contact-subtitle');
+    sr.reveal('#contact-description');
     
+    $('#experienceBar').fadeTo(0,0);
     inView('#experienceBar').on(
         'enter', el => {
+            $('#experienceBar').fadeTo(0,1);
             experienceBar.animate(1, {
                 duration: 800,
                 easing: 'easeInOut'
@@ -94,8 +29,10 @@ define(require => {
         }
     );
 
+    $('#skillsBar').fadeTo(0,0);
     inView('#skillsBar').on(
         'enter', el => {
+            $('#skillsBar').fadeTo(0,1);
             skillsBar.animate(1, {
                 duration: 800,
                 easing: 'easeInOut'

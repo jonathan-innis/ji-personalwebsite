@@ -21,8 +21,10 @@ define(require =>{
     });
     
     let experienceLoaded = false;
+    $('#experience-title').fadeTo(0,0);
     inView('#experience-title').on(
         'enter', el => {
+            $('#experience-title').fadeTo(0,1);
             if (!experienceLoaded){
                 $('.ml14').each(function(){
                     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -46,8 +48,10 @@ define(require =>{
     )
 
     let skillsLoaded = false;
+    $('#skills-title').fadeTo(0,0);
     inView('#skills-title').on(
         'enter', el => {
+            $('#skills-title').fadeTo(0,1);
             if (!skillsLoaded){
                 $('.ml15').each(function(){
                     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -71,8 +75,10 @@ define(require =>{
     )
 
     let projectsLoaded = false;
+    $('#projects-title').fadeTo(0,0);
     inView('#projects-title').on(
         'enter', el => {
+            $('#projects-title').fadeTo(0,1);
             if (!projectsLoaded){
                 $('.ml16').each(function(){
                     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -96,8 +102,10 @@ define(require =>{
     )
 
     let contactLoaded = false;
+    $('#contact-title').fadeTo(0,0);
     inView('#contact-title').on(
         'enter', el => {
+            $('#contact-title').fadeTo(0,1);
             if (!contactLoaded){
                 $('.ml17').each(function(){
                     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
