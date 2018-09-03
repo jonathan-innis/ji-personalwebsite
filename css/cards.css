@@ -8,7 +8,15 @@
     position: relative;
     display: block;
     line-height: 30vw;
+    border: none !important;
+    border-radius: 0;
+    margin: 0px;
     border-top: 4px solid white;
+    padding: 0px;
+}
+
+.card:hover{
+    border: none;
 }
 
 #left-card{
