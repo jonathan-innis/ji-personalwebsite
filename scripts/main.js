@@ -12,7 +12,8 @@ define(require => {
     sr.reveal('#languages-title');
     sr.reveal('#languages-overview');
     sr.reveal('#sympliact-container');
-    sr.reveal('#cisco-container');
+    sr.reveal('#cisco1-container');
+    sr.reveal('#cisco2-container');
     sr.reveal('#skills-header');
     sr.reveal('#contact-container');
     sr.reveal('#contact-subtitle');
