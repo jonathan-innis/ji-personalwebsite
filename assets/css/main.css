@@ -1,0 +1,119 @@
+html, body {
+    font-family: 'Questrial', sans-serif;
+    overflow-x: hidden;
+}
+
+#logo{
+    width: 90vw;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50vh;
+}
+
+#box2{
+    width: 100%;
+    margin: 200px 0px;
+}
+
+#box3{
+    width: 100%;
+    margin-top: 300px;
+}
+
+.vl{
+    border-left: 4px solid black;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    margin-left: -2px;
+    top: 0;
+    width: 0px;
+    margin: 100px 0px;
+}
+
+.first-vl{
+    margin-top: -250px;
+}
+
+nav{
+    position: fixed;
+    height: 70px;
+    padding: 20px 200px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+}
+
+nav > p{
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+nav > .icons {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 100%;
+}
+
+nav > .icons svg {
+    height: 100%;
+    width: auto !important;
+    margin: 0px 15px;
+}
+
+h1{
+    font-size: 6rem;
+    padding: 0px 80px;
+}
+
+h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+.experience-card{
+    margin: 100px;
+    text-align: right;
+}
+.experience-card h3{
+    font-size: 2.5rem;
+    margin: 0px;
+}
+.experience-card h6{
+    font-size: 1.25rem;
+    opacity: 0.5;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+#projects .col-5{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.projects-card{
+    margin: 50px 0px;
+}
+
+.projects-card p{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+
+.projects-card h3{
+    font-size: 3rem;
+}
+
+#skills{
+    margin-top: 150px;
+}
