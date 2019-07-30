@@ -8,18 +8,24 @@ html, body {
     max-width: 700px;
     position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
     margin-top: 50vh;
+    animation: float-logo 6s ease-in-out infinite;
 }
 
 #box2{
     width: 100%;
     margin: 200px 0px;
+    animation: float 6s ease-in-out infinite;
 }
 
 #box3{
     width: 100%;
     margin-top: 300px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.subtext{
+    text-align: center;
 }
 
 .vl{
@@ -73,6 +79,9 @@ h1{
 
 h2{
     font-size: 5rem;
+}
+
+.skills-list{
     text-align: center;
 }
 
@@ -95,25 +104,94 @@ h2{
     margin: 5px 0px;
 }
 
-#projects .col-5{
+#organizations .col-5{
     padding-top: 50px;
     padding-left: 100px;
 }
 
-.projects-card{
+.organizations-card{
     margin: 50px 0px;
 }
 
-.projects-card p{
+.organizations-card p{
     font-size: 1.5rem;
     opacity: 0.5;
     margin-left: 20px;
 }
 
-.projects-card h3{
+.organizations-card h3{
     font-size: 3rem;
+    display: inline-block;
 }
 
 #skills{
     margin-top: 150px;
+}
+
+#skills h3{
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#skills .row{
+    margin: 90px 180px !important;
+    position: relative;
+}
+
+#skills .skills-info{
+    text-align: left;
+    margin-left: auto;
+    right: 0px;
+    width: 40%;
+    max-width: 500px;
+}
+
+#skills .skills-info h5{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.dots{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.dot{
+    background: black;
+    display: inline-block;
+    margin: 0px 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+}
+
+.skills-info .tag{
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+
+@keyframes float-logo {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	50% {
+		transform: translate(-50%, -54%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
