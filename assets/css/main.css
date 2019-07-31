@@ -24,6 +24,24 @@ html, body {
     animation: float 6s ease-in-out infinite;
 }
 
+#orgs{
+    width: 100%;
+}
+
+.skills-title{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.skills-title img{
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    z-index: -1;
+    left: -20px;
+}
+
 .subtext{
     text-align: center;
 }
@@ -130,9 +148,6 @@ h2{
 
 #skills h3{
     font-size: 4rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #skills .row{
@@ -142,10 +157,10 @@ h2{
 
 #skills .skills-info{
     text-align: left;
-    margin-left: auto;
     right: 0px;
     width: 40%;
     max-width: 500px;
+    margin-left: 600px;
 }
 
 #skills .skills-info h5{
