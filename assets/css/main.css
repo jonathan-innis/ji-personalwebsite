@@ -24,6 +24,14 @@ html, body {
     animation: float 6s ease-in-out infinite;
 }
 
+#box4{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    width: 45%;
+    top: -35%;
+}
+
 #orgs{
     width: 100%;
 }
@@ -36,7 +44,7 @@ html, body {
 
 .skills-title img{
     position: absolute;
-    width: 350px;
+    height: 65px;
     top: 50%;
     z-index: -1;
     left: -20px;
@@ -77,6 +85,11 @@ nav > p{
     font-size: 1.25rem;
 }
 
+nav .email {
+    display: inline-block; 
+    margin-right: 10px;
+}
+
 nav > .icons {
     position: relative;
     display: inline-block;
@@ -88,6 +101,13 @@ nav > .icons svg {
     height: 100%;
     width: auto !important;
     margin: 0px 15px;
+    color: #a3a7ae;
+    transition: color 0.5s ease-in-out;
+}
+
+nav > .icons svg:hover {
+    color: black;
+    transition: color 0.5s ease-in-out;
 }
 
 h1{
@@ -182,9 +202,56 @@ h2{
     border-radius: 40px;
 }
 
+.skills1{
+    background-color: #BFDFF4;
+}
+
+.skills2{
+    background-color: #F8E0ED;
+}
+
+.skills3{
+    background-color: #D0EBDC;
+}
+
+.skills4{
+    background-color: #D8D3E9;
+}
+
+.skills5{
+    background-color: #F8B7B5;
+}
+
 .skills-info .tag{
     opacity: 0.5;
     font-size: 1.25rem;
+    display: none; /*TODO Comment this out later */
+}
+
+#overview{
+    margin-top: 200px;
+}
+
+#overview .profile{
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overview h2{
+    font-size: 4vw;
+}
+
+#overview p{
+    padding-top: 20px;
+}
+
+footer{
+    height: 100px;
 }
 
 @keyframes float-logo {
