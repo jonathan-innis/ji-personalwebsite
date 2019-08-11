@@ -108,6 +108,10 @@ nav > .icons {
     height: 100%;
 }
 
+nav > .links p{
+    display: inline-block;
+}
+
 nav > .icons svg {
     height: 100%;
     width: auto !important;
