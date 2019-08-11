@@ -3,6 +3,10 @@ html, body {
     overflow-x: hidden;
 }
 
+nav a{
+    color: black;
+}
+
 #logo{
     width: 90vw;
     max-width: 700px;
@@ -30,10 +34,17 @@ html, body {
     z-index: -1;
     width: 45%;
     top: -35%;
+    animation: float 6s ease-in-out infinite;
 }
 
 #orgs{
+    max-width: 600px;
     width: 100%;
+    margin-left: auto;
+    float: right;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%)
 }
 
 .skills-title{
@@ -127,9 +138,15 @@ h2{
     padding: 0px;
 }
 
+.card-container{
+    max-width: 800px;
+    margin-left: auto;
+    padding: 100px;
+}
+
 .experience-card{
-    margin: 100px;
     text-align: right;
+    padding: 20px;
 }
 .experience-card h3{
     font-size: 2.5rem;
@@ -180,7 +197,7 @@ h2{
     right: 0px;
     width: 40%;
     max-width: 500px;
-    margin-left: 600px;
+    margin-left: 50vw;
 }
 
 #skills .skills-info h5{
@@ -229,7 +246,7 @@ h2{
 }
 
 #overview{
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 #overview .profile{
@@ -251,7 +268,11 @@ h2{
 }
 
 footer{
-    height: 100px;
+    margin-top: 100px;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: gray;
 }
 
 @keyframes float-logo {
@@ -276,4 +297,154 @@ footer{
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+@media (max-width: 1000px) {
+    nav{
+        padding: 20px;
+    }
+
+    .card-container{
+        padding: 100px 50px;
+    }
+
+    #skills .skills-info{
+        margin-left: 400px;
+        width: 50%;
+    }
+
+    #skills .row{
+        margin: 90px 100px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: 60px;
+    }
+
+    nav{
+        padding: 15px;
+    }
+    nav .email{
+        display: none;
+    }
+
+    nav > p {
+        font-size: 1.25rem;
+    }
+
+    nav > .icons{
+        height: 100%;
+    }
+
+    .first-vl{
+        margin-top: -100px;
+    }
+
+    .vl{
+        height: 200px;
+    }
+
+    .subtext{
+        font-size: 2.5rem;
+        padding: 0px 20px;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        padding: 0px 30px;
+    }
+
+    #experience .col-4{
+        display: none;
+    }
+
+    .card-container{
+        padding: 35px;
+        flex: 100%;
+    }
+
+    #organizations .col-6, #organizations .col-1{
+        display: none;
+    }
+
+    #organizations .col-5{
+        padding-left: 50px;
+        padding-top: 0px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .experience-card h3{
+        font-size: 2rem;
+    }
+
+    .organizations-card h3{
+        font-size: 2rem;
+    }
+
+    .organizations-card p{
+        font-size: 1.25rem;
+    }
+
+    #skills{
+        margin-top: 10px;
+    }
+
+    #skills .row{
+        margin: 0px !important;
+        padding: 50px;
+    }
+
+    #skills .skills-info{
+        margin-left: 0px;
+    }
+
+    #skills h3{
+        font-size: 3rem;
+    }
+
+    #skills .skills-info{
+        width: 100%;
+    }
+
+    #skills .skills-title{
+        position: relative;
+    }
+
+    .skills-title img{
+        height: 50px;
+    }
+
+    #skills .skills-info h5{
+        font-size: 1.5rem;
+    }
+
+    #overview{
+        margin-top: 30px;
+    }
+
+    #box4{
+        display: none;
+    }
+
+    #overview .col-5{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #overview .col-7{
+        flex: 100%;
+        max-width: 100%;
+        padding: 10px 70px !important;
+    }
+
+    #overview h2{
+        font-size: 2.5rem;
+    }
+    
+    footer{
+        margin-top: 30px;
+    }
 }
