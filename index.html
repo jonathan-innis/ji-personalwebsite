@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Jonathan Innis Website Design</title>
+  <title>Jonathan Innis</title>
   <meta name="description" content="A portfolio and digital resume of Jonathan Innis">
   <meta name="author" content="Jonathan Innis">
 
@@ -17,233 +17,188 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 
   <!-- ICONS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
-  <!--Scroll Reveal-->
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
   <!--JQuery Plugins-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script data-main="scripts/app" src="scripts/require.js"></script>
-  <script>
-      $(window).on('load', function() {
-        $("#cover").hide();
-     });
-  </script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/animated-titles.css">
-  <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/main.css?version=4">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/loading-animation.css">
+  <link rel="stylesheet" href="assets/css/main.css?version=4">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <div id="cover">
-    <div class="sk-folding-cube">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
+  <nav>
+    <p><a href="index.html">jonathan innis</a></p>
+    <div class="icons">
+      <p class="email">jonathan.innis.ji@gmail.com</p>
+      <a href="https://github.com/jonathan-innis"><i class="fab fa-github fa-5x"></i></a>
+      <a href="https://www.linkedin.com/in/jonathan-innis-87581312a/"><i class="fab fa-linkedin fa-5x"></i></a>
+      <a href="assets/files/Jonathan_Innis_Resume.pdf" target="_blank"><i class="fas fa-file-alt fa-5x"></i></a>
     </div>
-  </div>
-  <div class="rectangle"></div>
-  <section class="full-width">
-      <div class="header-div">
-        <h1 class="header ml13">inspired</h1>
-        <h1 class="header ml13">by</h1>
-        <br/>
-        <h1 class="header ml13">design.</h1>
-        <br/>
-        <h1 class="header ml13">driven</h1>
-        <h1 class="header ml13">by</h1>
-        <br/>
-        <h1 class="header ml13">passion.</h1>
-        <div id="titleBar"></div>
-        <p class="header-small">jonathan innis design</p>
+  </nav>
+  <img src="assets/images/main.png" id="logo">
+  <div class="vl first-vl"></div>
+  <h2 class="subtext">yeah, i'm really into development and design</h2> 
+  <div class="vl"></div>
+  <section id="experience" class="container-fluid">
+    <h1>experience</h1>
+    <div class="row">
+      <div class="col-4">
+        <img src="assets/images/box2-edit.png" id="box2">
       </div>
-  </section>
-  <section id="information1" class="information">
-    <h1 class="infoheader animated" id="infoheader1">Aspire to build something amazing. Settle for nothing but the best.</h1>
-    <p class="information-paragraph animated">I create high-quality websites and frontend user interfaces for individuals and companies alike.<br/>If you want a developer that can take your product to the next level visually, I'm your man. </p>
-  </section>
-  <section id="experience">
-    <h1 id="experience-title" class="subheader ml14" style="margin-top: 100px">experience</h1>
-    <div style="width:50%">
-      <div id="experienceBar" style="margin-top: 10px"></div>
-    </div>
-    <div id="cisco1-container" class="six columns animated experience-container">
-      <h1 class="small-title">Cisco Systems</h1>
-      <h2 class="experience-role"> Software Development Intern </h2>
-      <h2 class="experience-time"> May 2018 - August 2018 </h2>
-      <p style="font-size: 2rem">Jonathan supported the cloud operations team by developing fullstack web applications to improve automation and assist engagement with the team. One application was built using Angular, Flask, and mySQL and assessed the maturity and feasibility of a business unit's cloud infrastructure. The second application was built using Angular, Flask, and MongoDB and automated the team's cloud infrastructure invoice processing.  </p>
-      <div class="chip">Angular</div>
-      <div class="chip">Django</div>
-      <div class="chip">SQL</div>
-      <div class="chip">MongoDB</div>
-    </div>
-    <div id="sympliact-container" class="six columns animated experience-container">
-      <h1 class="small-title">Sympliact Inc., LLC</h1>
-      <h2 class="experience-role"> Lead UI Developer </h2>
-      <h2 class="experience-time"> December 2017 - May 2018 </h2>
-      <p class="experience-description">As part of the fullstack web team at Sympliact, Jonathan lead the team in UI/UX by developing the majority of the team's frontend build in React. Additionally, he supported the backend system by integrating the Realm.io database into the system using Redux and Node.js. </p>
-      <div class="chip">Next.js</div>
-      <div class="chip">React.js</div>
-      <div class="chip">Node.js</div>
-      <div class="chip">Express</div>
-    </div>
-    <div id="cisco2-container" class="six columns animated experience-container">
-      <h1 class="small-title">Cisco Systems</h1>
-      <h1 class="experience-role"> Software Development Intern </h1>
-      <h2 class="experience-time"> May 2017 - July 2017</h2>
-      <p style="font-size: 2rem">While serving as a software engineering intern with the technical services team, Jonathan created a bot to assist the technical services team with case management. By using Cisco's Spark API provided through Cisco DevNet, he developed a system developed with Python and Node.js that routed all messaging and updates that went through their case management system through Cisco Spark (now Webex Teams).</p>
-      <div class="chip">Python</div>
-      <div class="chip">Javascript</div>
-      <div class="chip">Webhooks</div>
-    </div>
-  </section>
-  <section>
-    <div class="cardContainer">
-        <div style="width: 100%; text-align: center">
-            <h1 class="ml16" id="projects-title">PROJECTS</h1>
+      <div class="col-8 card-container">
+        <div class="experience-card">
+          <h3>@microsoft</h3>
+          <h6>summer 2019 | redmond, wa</h6>
+          <p>In my time at Microsoft, I developed features within the <b>Azure Compute</b> extension management systems automating various IT tasks on millions of customer virtual machines using <b>Go</b> and <b>C++</b>. While at Microsoft, I prepared code for production deployment by using thorough <b>unit testing</b>, <b>Makefile</b> building, and continuous integration with <b>Azure Devops</b>.</p>
         </div>
-        <button class="card" id="left-card" onclick="location.href='https://goodbullschedules.com/';">
-          <div id="good-bull" class="card-image">
-            <div class="expanding-rectangle black-border"></div>
-          </div>
-          <div class="hovered-text black-text"><!--learn more&nbsp;
-            <i class="fas fa-angle-right"></i>-->
-          </div>
-        </button>
-        <button class="card" id="right-card" onclick="location.href='https://aggiecodingclub.com/';">
-          <div id="aggie-coding" class="card-image">
-              <div class="expanding-rectangle"></div>
-          </div>
-          <div class="hovered-text"><!--learn more&nbsp;
-            <i class="fas fa-angle-right"></i>-->
-          </div>
-        </button> 
-        <!--
-        <div class="card" id="left-card">
-          <div id="hacc-landing" class="card-image">
-              <span>HACC LANDING PAGE</span>
-          </div>
+        <div class="experience-card">
+          <h3>@cisco</h3>
+          <h6>summer 2019 | san jose, ca</h6>
+          <p>I supported the cloud operations team by developing <b>fullstack web applications</b> to improve automation and assist engagement with the team. One application was built using <b>Angular</b>, <b>Flask</b>, and <b>mySQL</b> and assessed the maturity and feasibility of a business unit's cloud infrastructure. The second application was built using <b>Angular</b>, <b>Flask</b>, and <b>MongoDB</b> and automated the team's cloud infrastructure invoice processing.</p>
         </div>
-        <div class="card" id="right-card">
-          <div id="personal-website" class="card-image">
-              <span>JINNIS DESIGN WEBSITE</span>
-          </div>
-        </div> 
-      -->
-    </div>
-  </section>
-  <section id="information2" class="information">
-    <h1 class="infoheader animated" id="infoheader2">Get a website that doesn't just work but works for you.</h1>
-    <div id="information2-container" class="container animated" style="text-align: center">
-      <div class="four columns info-column">
-        <i class="fas fa-code big-icon black-text"></i>
-        <p class="large-icon-info">fullstack experience.</p>
-        <p class="small-icon-info">Hiring a developer that can see the application from all angles.</p>
-      </div>
-      <div class="four columns info-column">
-        <i class="far fa-lightbulb big-icon black-text"></i>
-        <p class="large-icon-info">innovative <br/>graphic designer.</p>
-        <p class="small-icon-info">Not everyone has an eye for design, get someone who does.</p>
-      </div>
-      <div class="four columns info-column">
-        <i class="fas fa-cogs big-icon black-text"></i>
-        <p class="large-icon-info">cutting-edge versatility.</p>
-        <p class="small-icon-info">Never be satisfied with someone stuck in old web trends.</p>
+        <div class="experience-card">
+          <h3>@sympliact</h3>
+          <h6>summer 2019 | college station, tx</h6>
+          <p>
+
+            As part of the fullstack web team at Sympliact, Jonathan lead the team in <b>UI/UX</b> by developing the majority of the team's frontend build in <b>React</b>. Additionally, he supported the backend system by integrating the <b>Realm.io</b> database into the system using <b>Redux</b> and <b>Node.js</b>.</p>
+        </div>
+        <div class="experience-card">
+          <h3>@cisco</h3>
+          <h6>summer 2019 | austin, tx</h6>
+          <p>While serving as a software engineering intern with the technical services team, I created a <b>bot</b> to assist the technical services team with <b>case management</b>. By using Cisco's <b>Spark API</b> provided through <b>Cisco DevNet</b>, he developed a system developed with <b>Python</b> and <b>Node.js</b> that routed all messaging and updates that went through their case management system through <b>Cisco Spark</b> (now Webex Teams).</p>
+        </div>
       </div>
     </div>
   </section>
-  <section id="skills">
-      <h1 id="skills-title" class="subheader ml15" style="margin-top: 100px">skills</h1>
-      <div class="skills-section" style="width:50%;">
-        <div id="skillsBar" style="margin-top: 10px"></div>
+  <section id="organizations" class="container-fluid">
+    <h1>organizations</h1>
+    <div class="row">
+      <div class="col-1">
+        <img src="assets/images/box3-edit.png" id="box3">
       </div>
-      <div class="information" style="background-color: white; padding-bottom: 0px;">
-        <h1 class="infoheader animated" id="skills-header">Languages and Frameworks matter.</h1>
-        <p class="skills-overview animated" id="frameworks-overview">If your developer doesn't keep up with the latest languages or know frameworks, there's no way they are staying ahead of the curve. Get a developer who keeps pace with cutting-edge languages and frameworks.</p>      
-      </div>
-      <div class="container skills-section">
-        <div class="twelve columns" style="text-align: center">
-          <h1 class="skills-mini-title animated" id="languages-title">Languages</h1>
+      <div class="col-5">
+        <div class="organizations-card">
+          <h3>howdyhack</h3>
+          <p>technical director</p>
         </div>
-        <br/>
-        <div class="four columns" style="margin-left: 0px;">
-          <div id="cppCircle" class="semicircle"></div>
-          <p class="skills-description">very experienced</p>
+        <div class="organizations-card">
+          <h3>tamuhack</h3>
+          <p>design director | technical director</p>
         </div>
-        <div class="four columns">
-          <div id="jsCircle" class="semicircle"></div>
-          <p class="skills-description">very experienced</p>
-        </div>
-        <div class="four columns">
-          <div id="pythonCircle" class="semicircle"></div>
-          <p class="skills-description">very experienced</p>
-        </div> 
-        <div class="four columns" style="margin-left: 0px;">
-          <div id="javaCircle" class="semicircle"></div>
-          <p class="skills-description">experienced</p>
-        </div>
-        <div class="four columns">
-          <div id="cCircle" class="semicircle"></div>
-          <p class="skills-description">experienced</p>
-        </div>
-        <div class="four columns">
-          <div id="phpCircle" class="semicircle"></div>
-          <p class="skills-description">learning</p>
-        </div>
-      </div>  
-      <div class="container" style="padding-bottom: 50px">
-          <div class="twelve columns" style="text-align: center">
-            <h1 class="skills-mini-title animated" id="frameworks-title">Frameworks</h1>
-          </div>
-          <div class="four columns" style="margin-left: 0px;">
-            <div id="reactCircle" class="semicircle"></div>
-            <p class="skills-description">very experienced</p>
-          </div>
-          <div class="four columns">
-            <div id="nodejsCircle" class="semicircle"></div>
-            <p class="skills-description">experienced</p>
-          </div>
-          <div class="four columns">
-            <div id="djangoCircle" class="semicircle"></div>
-            <p class="skills-description">learning</p>
-          </div> 
-        </div>  
-    </section>
-    <section id="contact">
-      <div class="container" style="padding: 100px 0px">
-        <div class="eight columns">
-          <h1 id="contact-subtitle">let's get in touch</h1>
-          <p id="contact-description">Feel free to check out my LinkedIn and Github accounts to see what I'm working on.</p>
-        </div>
-        <div id="contact-container" class="four columns">
-          <a class="link-container" href="https://github.com/jonathan-innis"><i class="fab fa-github icon"></i></a>
-          <h1 class="vertical-align icon-text">jonathan-innis</h1>
-          <br/>
-          <a class="link-container" href="https://www.linkedin.com/in/jonathan-innis-87581312a/"><i class="fab fa-linkedin icon"></i></a>
-          <h1 class="vertical-align icon-text">Jonathan Innis</h1>
-          <br/>
-          <a class="link-container" href="mailto:jinnisdesign@gmail.com"><i class="far fa-envelope icon"></i></a>
-          <h1 class="vertical-align icon-text">jinnisdesign@gmail.com</h1>
+        <div class="organizations-card">
+          <h3>aggie coding club</h3>
+          <p>project manager</p>
         </div>
       </div>
-      <p class="copyright">Jonathan Innis Design &copy; 2018</p>
-    </section>
+      <div class="col-6" style="padding: 0px 10%">
+        <img src="assets/images/organizations.png" id="orgs">
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="container-fluid">
+    <h1>languages</h1>
+    <div class="row">
+      <div class="skills-title">
+        <h3>javascript</h3>
+        <img src="assets/images/skills1.png">
+      </div>
+      <div class="skills-info">
+        <h5>very experienced</h5>
+        <div class="dots">
+          <div class="dot skills1"></div>
+          <div class="dot skills1"></div>
+          <div class="dot skills1"></div>
+          <div class="dot skills1"></div>
+          <div class="dot skills1"></div>
+        </div>
+        <p>The majority of my personal projects are built around web development; thus, I am very experienced in javascript and javascript-based frameworks. <b>Express</b>, <b>React</b>, and <b>Angular</b> are three of the frameworks with which I have the most experience.</p>
+        <p class="tag"><a href="https://google.com">see how i use javascript in my projects...</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="skills-title">
+        <h3>python</h3>
+        <img src="assets/images/skills3.png">
+      </div>
+      <div class="skills-info">
+        <h5>very experienced</h5>
+        <div class="dots">
+          <div class="dot skills3"></div>
+          <div class="dot skills3"></div>
+          <div class="dot skills3"></div>
+          <div class="dot skills3"></div>
+          <div class="dot skills3"></div>
+        </div>
+        <p>Whenever I want to completed any kind of scripting task or do any quick programming, Python is my language of choice. I use Python on almost an everyday basis, use it to complete coding interview questions and Leetcode problems, and have leveraged the Python frameworks <b>Flask</b> and <b>Django</b> for backend web servides.</p>
+        <p class="tag"><a href="https://google.com">see how i use python in my projects...</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="skills-title">
+        <h3>go</h3>
+        <img src="assets/images/skills4.png">
+      </div>
+      <div class="skills-info">
+        <h5>very experienced</h5>
+        <div class="dots">
+          <div class="dot skills4"></div>
+          <div class="dot skills4"></div>
+          <div class="dot skills4"></div>
+          <div class="dot skills4"></div>
+          <div class="dot skills4"></div>
+        </div>
+        <p>Go is a language with which I have recently gained experience. I spent three months working on an <b>open-source project</b> for Microsoft entirely in Go. I have learned to love the language (even some its quirks **cough cough** error handling).</p>
+        <p class="tag"><a href="https://google.com">see how i use go in my projects...</a></p>
+      </div>
+    </div>
+    <div class="row" style="display: flex">
+      <div class="skills-title">
+        <h3>c++</h3>
+        <img src="assets/images/skills5.png">
+      </div>
+      <div class="skills-info">
+        <h5>very experienced</h5>
+        <div class="dots">
+          <div class="dot skills5"></div>
+          <div class="dot skills5"></div>
+          <div class="dot skills5"></div>
+          <div class="dot skills5"></div>
+          <div class="dot skills5"></div>
+        </div>
+        <p>C++ is the language of efficiency, and that's when I use it the most. I learned C++ in my first year at Texas A&M University and have used it every year since. Over my summer at Microsoft, I frequented my use of C++ and have programmed with it extensively for competitive programming.</p>
+        <p class="tag"><a href="https://google.com">see how i use c++ in my projects...</a></p>
+      </div>
+    </div>
+  </section>
+  <section id="overview" class="container-fluid">
+    <div class="row">
+      <div class="col-5" style="border-right: 2px solid black; position: relative; height: 290px;">
+        <img src="assets/images/profile.jpg" class="profile">
+      </div>
+      <div class="col-7" style="padding: 0px 100px;">
+        <img src="assets/images/box4-edit.png" id="box4">
+        <h2>oh yeah, and this is me</h2>
+        <p>Howdy! I'm a 4th-year student at Texas A&M University finishing up my last year in my Computer Science degree. I'm minoring in math and business and am spending my last year working on research in data science and artificial intelligence under Ben Hu. I love Texas, photography, basketball, and graphic design</p>
+        <p>I'm seeking a full-time software engineering role doing fullstack web development. Reach out to me through LinkedIn or email!</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    yeah, i built this myself. no templates were used in the making of this website. &nbsp;&nbsp;|&nbsp;&nbsp; Jonathan Innis &copy; 2019
+  </footer>
 </body>
 </html>

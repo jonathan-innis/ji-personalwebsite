@@ -1,0 +1,450 @@
+html, body {
+    font-family: 'Questrial', sans-serif;
+    overflow-x: hidden;
+}
+
+nav a{
+    color: black;
+}
+
+#logo{
+    width: 90vw;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    margin-top: 50vh;
+    animation: float-logo 6s ease-in-out infinite;
+}
+
+#box2{
+    width: 100%;
+    margin: 200px 0px;
+    animation: float 6s ease-in-out infinite;
+}
+
+#box3{
+    width: 100%;
+    margin-top: 300px;
+    animation: float 6s ease-in-out infinite;
+}
+
+#box4{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    width: 45%;
+    top: -35%;
+    animation: float 6s ease-in-out infinite;
+}
+
+#orgs{
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    float: right;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%)
+}
+
+.skills-title{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.skills-title img{
+    position: absolute;
+    height: 65px;
+    top: 50%;
+    z-index: -1;
+    left: -20px;
+}
+
+.subtext{
+    text-align: center;
+}
+
+.vl{
+    border-left: 4px solid black;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    margin-left: -2px;
+    top: 0;
+    width: 0px;
+    margin: 100px 0px;
+}
+
+.first-vl{
+    margin-top: -250px;
+}
+
+nav{
+    position: fixed;
+    height: 70px;
+    padding: 20px 200px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+}
+
+nav > p{
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+nav .email {
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+nav > .icons {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 100%;
+}
+
+nav > .icons svg {
+    height: 100%;
+    width: auto !important;
+    margin: 0px 15px;
+    color: #a3a7ae;
+    transition: color 0.5s ease-in-out;
+}
+
+nav > .icons svg:hover {
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+h1{
+    font-size: 6rem;
+    padding: 0px 80px;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+.skills-list{
+    text-align: center;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+.card-container{
+    max-width: 800px;
+    margin-left: auto;
+    padding: 100px;
+}
+
+.experience-card{
+    text-align: right;
+    padding: 20px;
+}
+.experience-card h3{
+    font-size: 2.5rem;
+    margin: 0px;
+}
+.experience-card h6{
+    font-size: 1.25rem;
+    opacity: 0.5;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+#organizations .col-5{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.organizations-card{
+    margin: 50px 0px;
+}
+
+.organizations-card p{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+
+.organizations-card h3{
+    font-size: 3rem;
+    display: inline-block;
+}
+
+#skills{
+    margin-top: 150px;
+}
+
+#skills h3{
+    font-size: 4rem;
+}
+
+#skills .row{
+    margin: 90px 180px !important;
+    position: relative;
+}
+
+#skills .skills-info{
+    text-align: left;
+    right: 0px;
+    width: 40%;
+    max-width: 500px;
+    margin-left: 50vw;
+}
+
+#skills .skills-info h5{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.dots{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.dot{
+    background: black;
+    display: inline-block;
+    margin: 0px 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+}
+
+.skills1{
+    background-color: #BFDFF4;
+}
+
+.skills2{
+    background-color: #F8E0ED;
+}
+
+.skills3{
+    background-color: #D0EBDC;
+}
+
+.skills4{
+    background-color: #D8D3E9;
+}
+
+.skills5{
+    background-color: #F8B7B5;
+}
+
+.skills-info .tag{
+    opacity: 0.5;
+    font-size: 1.25rem;
+    display: none; /*TODO Comment this out later */
+}
+
+#overview{
+    margin-top: 250px;
+}
+
+#overview .profile{
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overview h2{
+    font-size: 4vw;
+}
+
+#overview p{
+    padding-top: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: gray;
+}
+
+@keyframes float-logo {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	50% {
+		transform: translate(-50%, -54%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@media (max-width: 1000px) {
+    nav{
+        padding: 20px;
+    }
+
+    .card-container{
+        padding: 100px 50px;
+    }
+
+    #skills .skills-info{
+        margin-left: 400px;
+        width: 50%;
+    }
+
+    #skills .row{
+        margin: 90px 100px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: 60px;
+    }
+
+    nav{
+        padding: 15px;
+    }
+    nav .email{
+        display: none;
+    }
+
+    nav > p {
+        font-size: 1.25rem;
+    }
+
+    nav > .icons{
+        height: 100%;
+    }
+
+    .first-vl{
+        margin-top: -100px;
+    }
+
+    .vl{
+        height: 200px;
+    }
+
+    .subtext{
+        font-size: 2.5rem;
+        padding: 0px 20px;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        padding: 0px 30px;
+    }
+
+    #experience .col-4{
+        display: none;
+    }
+
+    .card-container{
+        padding: 35px;
+        flex: 100%;
+    }
+
+    #organizations .col-6, #organizations .col-1{
+        display: none;
+    }
+
+    #organizations .col-5{
+        padding-left: 50px;
+        padding-top: 0px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .experience-card h3{
+        font-size: 2rem;
+    }
+
+    .organizations-card h3{
+        font-size: 2rem;
+    }
+
+    .organizations-card p{
+        font-size: 1.25rem;
+    }
+
+    #skills{
+        margin-top: 10px;
+    }
+
+    #skills .row{
+        margin: 0px !important;
+        padding: 50px;
+    }
+
+    #skills .skills-info{
+        margin-left: 0px;
+    }
+
+    #skills h3{
+        font-size: 3rem;
+    }
+
+    #skills .skills-info{
+        width: 100%;
+    }
+
+    #skills .skills-title{
+        position: relative;
+    }
+
+    .skills-title img{
+        height: 50px;
+    }
+
+    #skills .skills-info h5{
+        font-size: 1.5rem;
+    }
+
+    #overview{
+        margin-top: 30px;
+    }
+
+    #box4{
+        display: none;
+    }
+
+    #overview .col-5{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #overview .col-7{
+        flex: 100%;
+        max-width: 100%;
+        padding: 10px 70px !important;
+    }
+
+    #overview h2{
+        font-size: 2.5rem;
+    }
+    
+    footer{
+        margin-top: 30px;
+    }
+}
